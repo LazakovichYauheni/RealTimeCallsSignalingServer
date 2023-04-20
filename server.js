@@ -2,7 +2,7 @@
 
 let WebSocketServer = require('ws').Server;
 let port = 8080;
-let wsServer = new WebSocketServer({ port: port });
+let wsServer = new WebSocketServer({host: "https://signaling-server-0rug.onrender.com", port: port });
 const ip = require('ip');
 console.log('websocket server start.' + ' ipaddress = ' + ip.address() + ' port = ' + port);
 
